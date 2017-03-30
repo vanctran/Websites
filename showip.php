@@ -1,7 +1,8 @@
 <?php
-    require_once '../login.php';
+    error_reporting(0);
+    require_once("secured/vt_login.php");
     $conn = new mysqli($hn, $un, $pw, $db);
-    if($con->connect_error) die($conn->connect_error);
+    if($conn->connect_error) die($conn->connect_error);
 
     $query = "SELECT * FROM ip ORDER BY time DESC";
     $result = $conn->query($query);

@@ -1,6 +1,7 @@
 <?php //  createuser.php
 
-require_once('secured/login.php');
+error_reporting(0);
+require_once('secured/vt_login.php');
 require_once('secured/encrypt.php');
 
 $conn = new mysqli($hn, $un, $pw, $db);

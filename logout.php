@@ -1,5 +1,7 @@
 <?php   //logout.php
 
+error_reporting(0);
+
 function logout()
 {
     session_start();
